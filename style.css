@@ -1,0 +1,202 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI Semilight"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+    font-weight: 200;
+}
+
+
+body, h1, ul, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+body {
+    font-family: 'Pretendard', sans-serif;
+}
+
+.cover {
+    background-image: url(images/profile-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 8vw 0;
+    text-align: center;
+}
+
+.cover-title {
+    font-size: 0%;
+}
+
+.cover-title:before {
+    content: "";
+    display: inline-block;
+    background-image: url(images/profile-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.nav-item_active {
+    font-weight: bold;
+}
+
+.link-container {
+    margin-top: 0px;
+    color: white;
+}
+
+.link-container li a {
+    display: none;
+    padding: 5px;
+    margin: 0 auto 5px;
+    text-align: center;
+    line-height: 1.8;
+    width: 80vw;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.link-container li a:before {
+    content: "";
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+    margin-right: 7px;
+    width: 22px;
+    height: 22px;
+}
+
+.link-container_active li a {
+    display: block;
+    width: 80%;
+}
+
+.discord span,
+.mail span {
+    font-weight: 200;
+}
+
+.blog { background-color: #19ADE4; }
+.blog:before { background-image: url(images/blog.png); }
+
+.youtube { background-color: #FF0000; }
+.youtube:before { background-image: url(images/youtube.png); }
+
+.notion { background-color: #303437; }
+.notion:before { background-image: url(images/notion.png); }
+
+.github { background-color: #231F20; }
+.github:before { background-image: url(images/github.png); }
+
+.unsplash { background-color: #000000; }
+.unsplash:before { background-image: url(images/unsplash.png); }
+
+.telegram { background-color: #37aee2; }
+.telegram:before { background-image: url(images/telegram.png); }
+
+.discord { background-color: #5865F2; }
+.discord:before { background-image: url(images/discord.png); }
+
+.twitter { background-color: #1D9BF0; }
+.twitter:before { background-image: url(images/twitter.png); }
+
+.instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+.instagram:before { background-image: url(images/instagram.png); }
+
+.mail { background-color: #666; }
+.mail:before { background-image: url(images/mail.png); }
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.catchphrase {
+    font-size: 0;
+}
+
+.catchphrase:before {
+    content: '';
+    background-image: url(images/profile-catchphrase.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 160px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    color: #666;
+}
+
+@media(min-width: 1024px) {
+    .cover {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 70vw;
+        height: 100vh;
+        text-align: left;
+        padding-top: 4vw;
+    }
+
+    .cover-title:before {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        margin-left: 4.5rem;
+    }
+
+    .cover-title:after {
+        content: "Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.";
+        display: block;
+        font-size: 2.5rem;
+        font-family: 'Segoe UI Semilight';
+        font-weight: 200;
+        margin: 0.4em 3em 0;
+        color: white;
+    }
+
+    .contents {
+        margin-left: 70vw;
+        margin-top: 20px;
+    }
+}
