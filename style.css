@@ -46,13 +46,13 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 1em auto;
+    margin: 0 auto;
     padding: 0;
 }
 
 .button {
-    display: inline;
-    padding: 15px;
+    display: inline-block;
+    padding: 1em;
     cursor: pointer;
 }
 
@@ -97,44 +97,44 @@ body {
     width: 80%;
 }
 
-.blog { background-color: #070B8A; }
-.blog:before { background-image: url(images/profile-logo.svg); }
+a#blog { background-color: #070B8A; }
+a#blog:before { background-image: url(images/profile-logo.svg); }
 
-.youtube { background-color: #FF0000; }
-.youtube:before { background-image: url(images/youtube.svg); }
+a#youtube { background-color: #FF0000; }
+a#youtube:before { background-image: url(images/youtube.svg); }
 
-.notion { background-color: #191919 ; }
-.notion:before { background-image: url(images/notion.svg); }
+a#notion { background-color: #191919 ; }
+a#notion:before { background-image: url(images/notion.svg); }
 
-.github { background-color: #0d1117; }
-.github:before { background-image: url(images/github.svg); }
+a#github { background-color: #0d1117; }
+a#github:before { background-image: url(images/github.svg); }
 
-.unsplash { background-color: #000000; }
-.unsplash:before { background-image: url(images/unsplash.svg); }
+a#unsplash { background-color: #000000; }
+a#unsplash:before { background-image: url(images/unsplash.svg); }
 
-.telegram { background-color: #229bdb; }
-.telegram:before { background-image: url(images/telegram.svg); }
+a#telegram { background-color: #229bdb; }
+a#telegram:before { background-image: url(images/telegram.svg); }
 
-.discord { background-color: #5865F2; }
-.discord:before { background-image: url(images/discord.svg); }
+a#discord { background-color: #5865F2; }
+a#discord:before { background-image: url(images/discord.svg); }
 
-.x { background-color: #101318; }
-.x:before { background-image: url(images/x.svg);}
+a#x { background-color: #101318; }
+a#x:before { background-image: url(images/x.svg);}
 
-.facebook { background-color: #0075e7; }
-.facebook:before { background-image: url(images/facebook.svg); }
+a#facebook { background-color: #0075e7; }
+a#facebook:before { background-image: url(images/facebook.svg); }
 
-.instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
-.instagram:before { background-image: url(images/instagram.svg); }
+a#instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+a#instagram:before { background-image: url(images/instagram.svg); }
 
-.kakaotalk { background-color: #ffe942; color: #000; }
-.kakaotalk:before { background-image: url(images/kakaotalk.svg); }
+a#kakaotalk { background-color: #ffe942; color: #000; }
+a#kakaotalk:before { background-image: url(images/kakaotalk.svg); }
 
-.email { background-color: #070B8A; }
-.email:before { background-image: url(images/email.svg); }
+a#email { background-color: #070B8A; }
+a#email:before { background-image: url(images/email.svg); }
 
 .footer {
-    margin: 50px;
+    margin: 2em 0 1em 0;
     text-align: center;
 }
 
