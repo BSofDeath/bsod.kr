@@ -109,7 +109,7 @@ body {
 .youtube { background-color: #FF0000; }
 .youtube:before { background-image: url(images/youtube.svg); }
 
-.notion { background-color: #191919; }
+.notion { background-color: #2F3437; }
 .notion:before { background-image: url(images/notion.svg); }
 
 .github { background-color: #0d1117; }
