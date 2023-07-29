@@ -1,20 +1,29 @@
-const pubBtn = document.querySelector('#nav-item_pub');
-const sciBtn = document.querySelector('#nav-item_social');
-const pubList = document.querySelector('#link-list_pub');
-const sciList = document.querySelector('#link-list_social');
+function show(id) {
+    const list = document.getElementsByClassName("linktree");
+    const btn = document.getElementsByClassName("button");
 
-function showList(btn, list) {
-    btn.classList.add('nav-item_active');
-    list.classList.add('link-container_active');
-}
-function HideList(btn, list) {
-    btn.classList.remove('nav-item_active');
-    list.classList.remove('link-container_active');
+    for (i = 0; i < list.length;  i++) {
+        if (list[i].classList.contains('visible')) {
+            list[i].classList.remove('visible');
+        }
+    }
+    for (i = 0; i < btn.length;  i++) {
+        if (btn[i].classList.contains('active')) {
+            btn[i].classList.remove('active');
+        }
+    }
+
+    document.querySelector('div#' + id).classList.add('visible');
+    document.querySelector('li#' + id).classList.add('active');
 }
 
-pubBtn.addEventListener('click', function() {
-    showList(pubBtn, pubList); HideList(sciBtn, sciList);
+const pBtn = document.querySelector('li#publishing');
+const sBtn = document.querySelector('li#social');
+
+pBtn.addEventListener('click', function() {
+    show(this.id);
 });
-sciBtn.addEventListener('click', function() {
-    showList(sciBtn, sciList); HideList(pubBtn, pubList);
+
+sBtn.addEventListener('click', function() {
+    show(this.id);
 });

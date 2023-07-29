@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
-@import url("https://egkoppel.github.io/product-sans/google-fonts.css");
 
 body, h1, ul, p {
     padding: 0;
@@ -43,64 +42,59 @@ body {
     height: 100px;
 }
 
-.nav-container {
+.nav {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 0;
 }
 
-.nav-item {
-    display: inline-block;
+.button {
+    display: inline;
     padding: 15px;
     cursor: pointer;
 }
 
-.nav-item a {
+.button a {
     color: black;
 }
 
-.nav-item_active {
+.button.active {
     font-weight: bold;
 }
 
-.link-container {
+.linktree {
     margin-top: 0px;
     color: white;
 }
 
-.link-container li a {
+.linktree li a {
     display: none;
     padding: 5px;
     margin: 0 auto 5px;
     text-align: center;
-    line-height: 1.8;
+    line-height: 180%;
     width: 80vw;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
 }
 
-.link-container li a:before {
+.linktree li a:before {
     content: "";
     display: inline-block;
-    background-size: cover;
+    background-size: 1.25em;
     background-repeat: no-repeat;
-    vertical-align: text-top;
-    margin-right: 7px;
-    width: 22px;
-    height: 22px;
+    vertical-align: text-bottom;
+    margin-right: 0.4em;
+    width: 1.25em;
+    height: 1.25em;
 }
 
-.link-container_active li a {
+.linktree.visible li a {
     display: block;
     width: 80%;
-}
-
-.discord span,
-.mail span {
-    font-weight: 200;
 }
 
 .blog { background-color: #070B8A; }
@@ -109,7 +103,7 @@ body {
 .youtube { background-color: #FF0000; }
 .youtube:before { background-image: url(images/youtube.svg); }
 
-.notion { background-color: #2F3437; }
+.notion { background-color: #191919 ; }
 .notion:before { background-image: url(images/notion.svg); }
 
 .github { background-color: #0d1117; }
@@ -185,13 +179,13 @@ body {
     }
 
     .cover-title:after {
-        content: "PC에 문제가 발생하여 다시 시작해야 합니다. 일부 오류 정보를 수집하고 있습니다. 그런 다음 다시 시작합니다.";
+        content: "Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.";
         display: block;
-        font-size: 2.75rem;
+        font-size: 3rem;
         font-family: 'Pretendard', sans-serif;
         font-weight: 300;
         line-height: 130%;
-        margin: 0.4em 2.65em 0;
+        margin: 0.4em 2.5em 0;
         color: white;
     }
 
