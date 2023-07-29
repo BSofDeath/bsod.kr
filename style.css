@@ -38,9 +38,9 @@ body {
     background-image: url(images/profile-logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 120px;
-    height: 120px;
+    margin: 0.75rem auto;
+    width: 100px;
+    height: 100px;
 }
 
 .nav-container {
