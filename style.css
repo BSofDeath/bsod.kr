@@ -150,7 +150,7 @@ body {
 
 .catchphrase:before {
     content: '';
-    background-image: url(images/profile-catchphrase.png);
+    background-image: url(images/profile-catchphrase.svg);
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
