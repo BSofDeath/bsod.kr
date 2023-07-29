@@ -35,7 +35,7 @@ body {
 .cover-title:before {
     content: "";
     display: block;
-    background-image: url(images/bsod.svg);
+    background-image: url(images/profile-logo.svg);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -104,7 +104,7 @@ body {
 }
 
 .blog { background-color: #070B8A; }
-.blog:before { background-image: url(images/bsod.svg); }
+.blog:before { background-image: url(images/profile-logo.svg); }
 
 .youtube { background-color: #FF0000; }
 .youtube:before { background-image: url(images/youtube.svg); }
