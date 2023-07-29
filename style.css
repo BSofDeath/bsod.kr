@@ -181,19 +181,19 @@ a#email:before { background-image: url(images/email.svg); }
         content: "";
         top: 0;
         left: 0;
-        width: 10vw;
-        height: 10vw;
+        width: 7vw;
+        height: 7vw;
         margin: 2rem 5.7vw 2rem;
     }
 
     .cover-title:after {
         content: "Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.";
         display: block;
-        font-size: 2.5vw;
+        font-size: 2vw;
         font-family: 'Pretendard', sans-serif;
         font-weight: 300;
         line-height: 130%;
-        margin: 0.4em 6.8vw 0;
+        margin: 0.4em 6.3vw 0;
         color: white;
     }
 
