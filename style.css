@@ -20,12 +20,16 @@ body {
 }
 
 .cover {
-    background-image: url(images/profile-bg.png);
-    background-size: cover;
+    display: relative;
+    background-color: #070B8A;
+    background-image: url(images/profile-pattern.svg);
+    background-size: 150vw;
     background-position: center;
-    padding: 8vw 0;
+    padding: 9vw 0;
     text-align: center;
+    overflow: hidden;
 }
+
 
 .cover-title {
     font-size: 0%;
@@ -34,7 +38,7 @@ body {
 .cover-title:before {
     content: "";
     display: block;
-    background-image: url(images/profile-logo.svg);
+    background-image: url(images/logo-lightTR.svg);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0.75rem auto;
@@ -153,13 +157,13 @@ a#email:before { background-image: url(images/email.svg); }
 
 .catchphrase:before {
     content: '';
-    background-image: url(images/profile-catchphrase.svg);
-    background-size: cover;
+    background-image: url(images/letter-darkTR.svg);
+    background-size: auto;
     background-repeat: no-repeat;
     display: block;
-    width: 160px;
-    height: 25px;
-    margin: 0 auto 10px;
+    width: 175px;
+    height: 30px;
+    margin: 0 auto 5px;
 }
 
 .copyright {
@@ -177,13 +181,14 @@ a#email:before { background-image: url(images/email.svg); }
         padding-top: 4vw;
     }
 
+
     .cover-title:before {
         content: "";
         top: 0;
         left: 0;
         width: 7vw;
         height: 7vw;
-        margin: 2rem 5.7vw 2rem;
+        margin: 2rem 6.3vw 2rem;
     }
 
     .cover-title:after {
