@@ -46,6 +46,10 @@ body {
     height: 5.25rem;
 }
 
+.contents {
+    background-color: #fff;
+}
+
 .nav {
     display: flex;
     flex-direction: column;
