@@ -184,7 +184,7 @@ a#spotify:before { background-image: url(images/spotify.svg); }
     color: #666;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1280px) {
     .cover {
         position: fixed;
         left: 0;
