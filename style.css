@@ -152,7 +152,7 @@ a#email:before { background-image: url(images/email.svg); }
 a#threads { background-color: #000000; }
 a#threads:before { background-image: url(images/threads.svg); }
 
-a#steam { background-color: #042430; }
+a#steam { background-color: #1b2838; }
 a#steam:before { background-image: url(images/steam.svg); }
 
 a#spotify { background-color: #1db954; }
