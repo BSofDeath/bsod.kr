@@ -19,11 +19,16 @@ function show(id) {
 
 const pBtn = document.querySelector('li#publishing');
 const sBtn = document.querySelector('li#social');
+const oBtn = document.querySelector('li#others');
 
 pBtn.addEventListener('click', function() {
     show(this.id);
 });
 
 sBtn.addEventListener('click', function() {
+    show(this.id);
+});
+
+oBtn.addEventListener('click', function() {
     show(this.id);
 });

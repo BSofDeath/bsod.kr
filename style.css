@@ -149,8 +149,18 @@ a#kakaotalk:before { background-image: url(images/kakaotalk.svg); }
 a#email { background-color: #070B8A; }
 a#email:before { background-image: url(images/email.svg); }
 
+a#threads { background-color: #000000; }
+a#threads:before { background-image: url(images/threads.svg); }
+
+a#steam { background-color: #171d25; }
+a#steam:before { background-image: url(images/steam.svg); }
+
+a#spotify { background-color: #46dd72; }
+a#spotify:before { background-image: url(images/spotify.svg); }
+
+
 .footer {
-    margin: 2em 0 1em 0;
+    margin: 2em 0;
     text-align: center;
 }
 
