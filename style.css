@@ -152,10 +152,10 @@ a#email:before { background-image: url(images/email.svg); }
 a#threads { background-color: #000000; }
 a#threads:before { background-image: url(images/threads.svg); }
 
-a#steam { background-color: #171d25; }
+a#steam { background-color: #042430; }
 a#steam:before { background-image: url(images/steam.svg); }
 
-a#spotify { background-color: #46dd72; }
+a#spotify { background-color: #1db954; }
 a#spotify:before { background-image: url(images/spotify.svg); }
 
 
