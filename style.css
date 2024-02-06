@@ -158,6 +158,15 @@ a#steam:before { background-image: url(images/steam.svg); }
 a#spotify { background-color: #1db954; }
 a#spotify:before { background-image: url(images/spotify.svg); }
 
+a#chzzk { 
+    background-color: #000000;
+}
+a#chzzk:before { 
+    background-image: url(images/chzzk.svg); 
+    margin-right: 0px;
+    width: 4em;
+    height: 1.25em;
+}
 
 .footer {
     margin: 2em 0;
