@@ -163,7 +163,6 @@ a#chzzk {
 }
 a#chzzk:before { 
     background-image: url(images/chzzk.svg); 
-    margin-right: 0px;
     width: 4em;
     height: 1.25em;
 }
