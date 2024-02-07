@@ -103,7 +103,7 @@ body {
 .linktree button {
     display: none;
     padding: 5px;
-    margin: 5px auto 6px;
+    margin: 5px auto 7px;
     font-family: 'Pretendard', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -144,71 +144,71 @@ body {
 
 #blog { background-color: #070B8A;  color: #fff; }
 #blog:before { background-image: url(images/logo-lightTR.svg); }
-#blog:hover { box-shadow: 0 0 6px 6px rgba(7, 11, 138, 0.3); }
+#blog:hover { box-shadow: 0 0 10px 5px rgba(7, 11, 138, 0.4); }
 
 #youtube { background-color: #FF0000; color: #fff; }
 #youtube:before { background-image: url(images/youtube.svg); }
-#youtube:hover { box-shadow: 0 0 6px 6px rgba(255, 0, 0, 0.3); }
+#youtube:hover { box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.4); }
 
 #notion { background-color: #333333; color: #fff; margin-right: 0.5em; }
 #notion:before { background-image: url(images/notion.svg); }
-#notion:hover { box-shadow: 0 0 6px 6px rgba(51, 51, 51, 0.3); }
+#notion:hover { box-shadow: 0 0 10px 5px rgba(51, 51, 51, 0.4); }
 
 #github { background-color: #0d1117; color: #fff; }
 #github:before { background-image: url(images/github.svg); }
-#github:hover { box-shadow: 0 0 6px 6px rgba(13, 17, 23, 0.3); }
+#github:hover { box-shadow: 0 0 10px 5px rgba(13, 17, 23, 0.4); }
 
 #unsplash { background-color: #000000; color: #fff; }
 #unsplash:before { background-image: url(images/unsplash.svg); margin-right: 0.25em; }
-#unsplash:hover { box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.3); }
+#unsplash:hover { box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4); }
 
 #telegram { background-color: #229bdb; color: #fff; }
 #telegram:before { background-image: url(images/telegram.svg); }
-#telegram:hover { box-shadow: 0 0 6px 6px rgba(34, 155, 219, 0.3); }
+#telegram:hover { box-shadow: 0 0 10px 5px rgba(34, 155, 219, 0.4); }
 
 #discord { background-color: #5865F2; color: #fff; }
 #discord:before { background-image: url(images/discord.svg); }
-#discord:hover { box-shadow: 0 0 6px 6px rgba(88, 101, 242, 0.3); }
+#discord:hover { box-shadow: 0 0 10px 5px rgba(88, 101, 242, 0.4); }
 
 #x { background-color: #101318; color: #fff; }
 #x:before { background-image: url(images/x.svg);}
-#x:hover { box-shadow: 0 0 6px 6px rgba(16, 19, 24, 0.3); }
+#x:hover { box-shadow: 0 0 10px 5px rgba(16, 19, 24, 0.4); }
 
 #facebook { background-color: #0075e7; color: #fff; }
 #facebook:before { background-image: url(images/facebook.svg); }
-#facebook:hover { box-shadow: 0 0 6px 6px rgba(0, 117, 231, 0.3); }
+#facebook:hover { box-shadow: 0 0 10px 5px rgba(0, 117, 231, 0.4); }
 
 #instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: #fff; }
 #instagram:before { background-image: url(images/instagram.svg); margin-right: 0.46em; }
-#instagram:hover { box-shadow: 0 0 6px 6px rgba(204, 35, 102, 0.3); }
+#instagram:hover { box-shadow: 0 0 10px 5px rgba(204, 35, 102, 0.4); }
 
 #kakaotalk { background-color: #ffe942; }
 #kakaotalk:before { background-image: url(images/kakaotalk.svg); }
-#kakaotalk:hover { box-shadow: 0 0 6px 6px rgba(255, 233, 66, 0.3); }
+#kakaotalk:hover { box-shadow: 0 0 10px 5px rgba(255, 233, 66, 0.4); }
 
 #email { background-color: #070B8A; color: #fff; }
 #email:before { background-image: url(images/email.svg); }
-#email:hover { box-shadow: 0 0 6px 6px rgba(7, 11, 138, 0.3); }
+#email:hover { box-shadow: 0 0 10px 5px rgba(7, 11, 138, 0.4); }
 
 #threads { background-color: #000000; color: #fff; }
 #threads:before { background-image: url(images/threads.svg); }
-#threads:hover { box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.3); }
+#threads:hover { box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4); }
 
 #steam { background: #025a9a; color: #fff; }
 #steam:before { background-image: url(images/steam.svg); }
-#steam:hover { box-shadow: 0 0 6px 6px rgba(2, 90, 154, 0.3); }
+#steam:hover { box-shadow: 0 0 10px 5px rgba(2, 90, 154, 0.4); }
 
 #spotify { background-color: #1db954; color: #fff; }
 #spotify:before { background-image: url(images/spotify.svg); }
-#spotify:hover { box-shadow: 0 0 6px 6px rgba(29, 185, 84, 0.3); }
+#spotify:hover { box-shadow: 0 0 10px 5px rgba(29, 185, 84, 0.4); }
 
 #bluesky { background-color: #1185fe; color: #fff; }
 #bluesky:before { background-image: url(images/bluesky.svg);}
-#bluesky:hover { box-shadow: 0 0 6px 6px rgba(17, 133, 254, 0.3); }
+#bluesky:hover { box-shadow: 0 0 10px 5px rgba(17, 133, 254, 0.4); }
 
 #chzzk { background-color: #00ffa3; }
 #chzzk:before { background-image: url(images/chzzk.svg); }
-#chzzk:hover { box-shadow: 0 0 6px 6px rgba(0, 255, 163, 0.3); }
+#chzzk:hover { box-shadow: 0 0 10px 5px rgba(0, 255, 163, 0.4); }
 
 
 
