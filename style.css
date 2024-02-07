@@ -97,11 +97,13 @@ body {
     content: "";
     display: inline-block;
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     vertical-align: text-bottom;
+    margin-bottom: -0.075em;
     margin-right: 0.4em;
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.3em;
+    height: 1.3em;
 }
 
 .linktree li:hover {
@@ -123,7 +125,7 @@ a#blog:before { background-image: url(images/logo-lightTR.svg); }
 a#youtube { background-color: #FF0000; }
 a#youtube:before { background-image: url(images/youtube.svg); }
 
-a#notion { background-color: #191919 ; }
+a#notion { background-color: #333333 }
 a#notion:before { background-image: url(images/notion.svg); }
 
 a#github { background-color: #0d1117; }
@@ -156,19 +158,20 @@ a#email:before { background-image: url(images/email.svg); }
 a#threads { background-color: #000000; }
 a#threads:before { background-image: url(images/threads.svg); }
 
-a#steam { background-color: #1b2838; }
+a#steam { background: #025a9a; }
 a#steam:before { background-image: url(images/steam.svg); }
 
 a#spotify { background-color: #1db954; }
 a#spotify:before { background-image: url(images/spotify.svg); }
 
-a#chzzk { 
-    background-color: #000000;
-}
+a#bluesky { background-color: #1185fe; }
+a#bluesky:before { background-image: url(images/bluesky.svg);}
+
+a#chzzk { background-color: #00ffa3; color: #000 }
 a#chzzk:before { 
     background-image: url(images/chzzk.svg); 
-    width: 4em;
-    height: 1.25em;
+    width: 4em; height: 1.3em;
+    margin-bottom: -0.05em;
 }
 
 .footer {
