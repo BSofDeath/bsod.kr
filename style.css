@@ -35,11 +35,11 @@ body {
 }
 
 
-.cover-title {
+#logo {
     font-size: 0%;
 }
 
-.cover-title:before {
+#logo:before {
     content: "";
     display: block;
     background-image: url(images/logo-lightTR.svg);
@@ -48,6 +48,18 @@ body {
     margin: 0.75rem auto;
     width: 5.25rem;
     height: 5.25rem;
+}
+
+#logo:after {
+    content: "PC에 문제가 발생하여 다시 시작해야 합니다. 일부 오류 정보를\A수집하고 있습니다. 그런 다음 자동으로 다시 시작합니다.";
+    white-space: pre;
+    display: none;
+    font-size: 2.3vw;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 300;
+    line-height: 130%;
+    margin: 1.2em 6.3vw 0;
+    color: white;
 }
 
 .contents {
@@ -62,117 +74,143 @@ body {
     padding: 0;
 }
 
-.button {
+.option {
     display: inline-block;
     padding: 1em;
     cursor: pointer;
+
 }
 
-.button a {
+.option a {
     color: black;
 }
 
-.button.active {
+.option.active {
     font-weight: bold;
 }
 
 .linktree {
     margin-top: 0px;
-    color: white;
 }
 
-.linktree li a {
+
+.linktree a {
+    display: none;
+    margin: 0 auto 5px;
+    width: 80%;
+}
+
+.linktree button {
     display: none;
     padding: 5px;
-    margin: 0 auto 5px;
-    text-align: center;
-    line-height: 180%;
-    width: 80vw;
+    margin: 5px auto 6px;
+    font-family: 'Pretendard', sans-serif;
     font-size: 18px;
     font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    line-height: 180%;
+    width: 100%;
+    border: none;
     border-radius: 0.5em;
+    cursor: pointer;
 }
 
-.linktree li a:before {
+.linktree button:hover {
+    filter: none;
+    transition-property: box-shadow, filter;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, filter;
+    -webkit-transition-duration: 0.3s;
+}
+
+.linktree li button:before {
     content: "";
     display: inline-block;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: text-bottom;
-    margin-bottom: -0.075em;
+    margin-bottom: -0.055em;
     margin-right: 0.4em;
-    width: 1.3em;
-    height: 1.3em;
+    width: 24px;
+    height: 24px;
 }
 
-.linktree li:hover {
-    -webkit-filter: opacity(80%);
-    filter: opacity(80%);
-
-    transition: filter 0.3s;
-    -webkit-transition: filter 0.3s;
-}
-
-.linktree.visible li a {
+.linktree.visible li a,
+.linktree.visible button {
     display: block;
-    width: 80%;
 }
 
-a#blog { background-color: #070B8A; }
-a#blog:before { background-image: url(images/logo-lightTR.svg); }
+#blog { background-color: #070B8A;  color: #fff; }
+#blog:before { background-image: url(images/logo-lightTR.svg); }
+#blog:hover { box-shadow: 0 0 6px 6px rgba(7, 11, 138, 0.3); }
 
-a#youtube { background-color: #FF0000; }
-a#youtube:before { background-image: url(images/youtube.svg); }
+#youtube { background-color: #FF0000; color: #fff; }
+#youtube:before { background-image: url(images/youtube.svg); }
+#youtube:hover { box-shadow: 0 0 6px 6px rgba(255, 0, 0, 0.3); }
 
-a#notion { background-color: #333333 }
-a#notion:before { background-image: url(images/notion.svg); }
+#notion { background-color: #333333; color: #fff; margin-right: 0.5em; }
+#notion:before { background-image: url(images/notion.svg); }
+#notion:hover { box-shadow: 0 0 6px 6px rgba(51, 51, 51, 0.3); }
 
-a#github { background-color: #0d1117; }
-a#github:before { background-image: url(images/github.svg); }
+#github { background-color: #0d1117; color: #fff; }
+#github:before { background-image: url(images/github.svg); }
+#github:hover { box-shadow: 0 0 6px 6px rgba(13, 17, 23, 0.3); }
 
-a#unsplash { background-color: #000000; }
-a#unsplash:before { background-image: url(images/unsplash.svg); }
+#unsplash { background-color: #000000; color: #fff; }
+#unsplash:before { background-image: url(images/unsplash.svg); margin-right: 0.25em; }
+#unsplash:hover { box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.3); }
 
-a#telegram { background-color: #229bdb; }
-a#telegram:before { background-image: url(images/telegram.svg); }
+#telegram { background-color: #229bdb; color: #fff; }
+#telegram:before { background-image: url(images/telegram.svg); }
+#telegram:hover { box-shadow: 0 0 6px 6px rgba(34, 155, 219, 0.3); }
 
-a#discord { background-color: #5865F2; }
-a#discord:before { background-image: url(images/discord.svg); }
+#discord { background-color: #5865F2; color: #fff; }
+#discord:before { background-image: url(images/discord.svg); }
+#discord:hover { box-shadow: 0 0 6px 6px rgba(88, 101, 242, 0.3); }
 
-a#x { background-color: #101318; }
-a#x:before { background-image: url(images/x.svg);}
+#x { background-color: #101318; color: #fff; }
+#x:before { background-image: url(images/x.svg);}
+#x:hover { box-shadow: 0 0 6px 6px rgba(16, 19, 24, 0.3); }
 
-a#facebook { background-color: #0075e7; }
-a#facebook:before { background-image: url(images/facebook.svg); }
+#facebook { background-color: #0075e7; color: #fff; }
+#facebook:before { background-image: url(images/facebook.svg); }
+#facebook:hover { box-shadow: 0 0 6px 6px rgba(0, 117, 231, 0.3); }
 
-a#instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
-a#instagram:before { background-image: url(images/instagram.svg); }
+#instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: #fff; }
+#instagram:before { background-image: url(images/instagram.svg); margin-right: 0.46em; }
+#instagram:hover { box-shadow: 0 0 6px 6px rgba(204, 35, 102, 0.3); }
 
-a#kakaotalk { background-color: #ffe942; color: #000; }
-a#kakaotalk:before { background-image: url(images/kakaotalk.svg); }
+#kakaotalk { background-color: #ffe942; }
+#kakaotalk:before { background-image: url(images/kakaotalk.svg); }
+#kakaotalk:hover { box-shadow: 0 0 6px 6px rgba(255, 233, 66, 0.3); }
 
-a#email { background-color: #070B8A; }
-a#email:before { background-image: url(images/email.svg); }
+#email { background-color: #070B8A; color: #fff; }
+#email:before { background-image: url(images/email.svg); }
+#email:hover { box-shadow: 0 0 6px 6px rgba(7, 11, 138, 0.3); }
 
-a#threads { background-color: #000000; }
-a#threads:before { background-image: url(images/threads.svg); }
+#threads { background-color: #000000; color: #fff; }
+#threads:before { background-image: url(images/threads.svg); }
+#threads:hover { box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.3); }
 
-a#steam { background: #025a9a; }
-a#steam:before { background-image: url(images/steam.svg); }
+#steam { background: #025a9a; color: #fff; }
+#steam:before { background-image: url(images/steam.svg); }
+#steam:hover { box-shadow: 0 0 6px 6px rgba(2, 90, 154, 0.3); }
 
-a#spotify { background-color: #1db954; }
-a#spotify:before { background-image: url(images/spotify.svg); }
+#spotify { background-color: #1db954; color: #fff; }
+#spotify:before { background-image: url(images/spotify.svg); }
+#spotify:hover { box-shadow: 0 0 6px 6px rgba(29, 185, 84, 0.3); }
 
-a#bluesky { background-color: #1185fe; }
-a#bluesky:before { background-image: url(images/bluesky.svg);}
+#bluesky { background-color: #1185fe; color: #fff; }
+#bluesky:before { background-image: url(images/bluesky.svg);}
+#bluesky:hover { box-shadow: 0 0 6px 6px rgba(17, 133, 254, 0.3); }
 
-a#chzzk { background-color: #00ffa3; color: #000 }
-a#chzzk:before { 
-    background-image: url(images/chzzk.svg); 
-    width: 4em; height: 1.3em;
-    margin-bottom: -0.05em;
-}
+#chzzk { background-color: #00ffa3; }
+#chzzk:before { background-image: url(images/chzzk.svg); }
+#chzzk:hover { box-shadow: 0 0 6px 6px rgba(0, 255, 163, 0.3); }
+
+
 
 .footer {
     margin: 2em 0;
@@ -211,7 +249,7 @@ a#chzzk:before {
     }
 
 
-    .cover-title:before {
+    #logo:before {
         content: "";
         top: 0;
         left: 0;
@@ -220,15 +258,8 @@ a#chzzk:before {
         margin: 2rem 6.3vw 2rem;
     }
 
-    .cover-title:after {
-        content: "Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.";
+    #logo:after {
         display: block;
-        font-size: 2vw;
-        font-family: 'Pretendard', sans-serif;
-        font-weight: 300;
-        line-height: 130%;
-        margin: 0.4em 6.3vw 0;
-        color: white;
     }
 
     .contents {
