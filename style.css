@@ -102,6 +102,7 @@ body {
 
 .linktree button {
     display: none;
+    color: black;
     padding: 5px;
     margin: 5px auto 7px;
     font-family: 'Pretendard', sans-serif;
