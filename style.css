@@ -69,7 +69,7 @@ body {
     font-size: 0%;
 }
 
-#logo:before {
+#logo::before {
     content: "";
     display: block;
     background-image: url(images/logo-lightTR.svg);
@@ -80,7 +80,7 @@ body {
     height: 5.25rem;
 }
 
-#logo:after {
+#logo::after {
     content: "PC에 문제가 발생하여 다시 시작해야 합니다. 일부 오류 정보를\A수집하고 있습니다. 그런 다음 자동으로 다시 시작합니다.";
     white-space: pre;
     display: none;
@@ -156,17 +156,17 @@ body {
     -webkit-transition-property: box-shadow, filter;
 }
 
-.linktree li button:before {
-    content: "";
-    display: inline-block;
+.linktree li button::before {
+    content: "　";
+    font-size: 110%;
+    display: inline;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    vertical-align: text-bottom;
-    margin-bottom: -0.055em;
+    margin-top: 0.2em;
     margin-right: 0.4em;
-    width: 24px;
-    height: 24px;
+    width: 100%;
+    height: 100%;
 }
 
 .linktree.visible li a,
@@ -175,71 +175,71 @@ body {
 }
 
 #blog { background-color: #070B8A; }
-#blog:before { background-image: url(images/logo-lightTR.svg); }
+#blog::before { background-image: url(images/logo-lightTR.svg); }
 #blog:hover { box-shadow: 0 0 10px 5px rgba(7, 11, 138, 0.4); }
 
 #youtube { background-color: #FF0000; }
-#youtube:before { background-image: url(images/youtube.svg); }
+#youtube::before { background-image: url(images/youtube.svg); }
 #youtube:hover { box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.4); }
 
 #notion { background-color: #333333; margin-right: 0.5em; }
-#notion:before { background-image: url(images/notion.svg); }
+#notion::before { background-image: url(images/notion.svg); }
 #notion:hover { box-shadow: 0 0 10px 5px rgba(51, 51, 51, 0.4); }
 
 #github { background-color: #0d1117; }
-#github:before { background-image: url(images/github.svg); }
+#github::before { background-image: url(images/github.svg); }
 #github:hover { box-shadow: 0 0 10px 5px rgba(13, 17, 23, 0.4); }
 
 #unsplash { background-color: #000000; }
-#unsplash:before { background-image: url(images/unsplash.svg); margin-right: 0.25em; }
+#unsplash::before { background-image: url(images/unsplash.svg); margin-right: 0.25em; }
 #unsplash:hover { box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4); }
 
 #telegram { background-color: #229bdb; }
-#telegram:before { background-image: url(images/telegram.svg); }
+#telegram::before { background-image: url(images/telegram.svg); }
 #telegram:hover { box-shadow: 0 0 10px 5px rgba(34, 155, 219, 0.4); }
 
 #discord { background-color: #5865F2; }
-#discord:before { background-image: url(images/discord.svg); }
+#discord::before { background-image: url(images/discord.svg); }
 #discord:hover { box-shadow: 0 0 10px 5px rgba(88, 101, 242, 0.4); }
 
 #x { background-color: #101318; }
-#x:before { background-image: url(images/x.svg);}
+#x::before { background-image: url(images/x.svg);}
 #x:hover { box-shadow: 0 0 10px 5px rgba(16, 19, 24, 0.4); }
 
 #facebook { background-color: #0075e7; }
-#facebook:before { background-image: url(images/facebook.svg); }
+#facebook::before { background-image: url(images/facebook.svg); }
 #facebook:hover { box-shadow: 0 0 10px 5px rgba(0, 117, 231, 0.4); }
 
 #instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
-#instagram:before { background-image: url(images/instagram.svg); margin-right: 0.46em; }
+#instagram::before { background-image: url(images/instagram.svg); margin-right: 0.46em; }
 #instagram:hover { box-shadow: 0 0 10px 5px rgba(204, 35, 102, 0.4); }
 
 #kakaotalk { background-color: #ffe942; color: black; }
-#kakaotalk:before { background-image: url(images/kakaotalk.svg); }
+#kakaotalk::before { background-image: url(images/kakaotalk.svg); }
 #kakaotalk:hover { box-shadow: 0 0 10px 5px rgba(255, 233, 66, 0.4); }
 
 #email { background-color: #070B8A; }
-#email:before { background-image: url(images/email.svg); }
+#email::before { background-image: url(images/email.svg); }
 #email:hover { box-shadow: 0 0 10px 5px rgba(7, 11, 138, 0.4); }
 
 #threads { background-color: #000000; }
-#threads:before { background-image: url(images/threads.svg); }
+#threads::before { background-image: url(images/threads.svg); }
 #threads:hover { box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4); }
 
 #steam { background: #025a9a; }
-#steam:before { background-image: url(images/steam.svg); }
+#steam::before { background-image: url(images/steam.svg); }
 #steam:hover { box-shadow: 0 0 10px 5px rgba(2, 90, 154, 0.4); }
 
 #spotify { background-color: #1db954; }
-#spotify:before { background-image: url(images/spotify.svg); }
+#spotify::before { background-image: url(images/spotify.svg); }
 #spotify:hover { box-shadow: 0 0 10px 5px rgba(29, 185, 84, 0.4); }
 
 #bluesky { background-color: #1185fe; }
-#bluesky:before { background-image: url(images/bluesky.svg);}
+#bluesky::before { background-image: url(images/bluesky.svg);}
 #bluesky:hover { box-shadow: 0 0 10px 5px rgba(17, 133, 254, 0.4); }
 
 #chzzk { background-color: #00ffa3; color: black; }
-#chzzk:before { background-image: url(images/chzzk.svg); }
+#chzzk::before { background-image: url(images/chzzk.svg); }
 #chzzk:hover { box-shadow: 0 0 10px 5px rgba(0, 255, 163, 0.4); }
 
 
@@ -254,7 +254,7 @@ body {
     margin: 0 auto;
 }
 
-.catchphrase:before {
+.catchphrase::before {
     content: '';
     background-image: url(images/letter-darkTR.svg);
     background-size: auto;
@@ -281,7 +281,7 @@ body {
     }
 
 
-    #logo:before {
+    #logo::before {
         content: "";
         top: 0;
         left: 0;
@@ -290,7 +290,7 @@ body {
         margin: 2rem 6.3vw 2rem;
     }
 
-    #logo:after {
+    #logo::after {
         display: block;
     }
 
